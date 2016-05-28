@@ -1,0 +1,108 @@
+/*#wrap > .container
+{
+    padding: 60px 15px 0;
+}*/
+#footer {
+  background-color: #2f2e2e;
+  height: 300px;
+  color: #939393;
+  padding-top: 50px; }
+  #footer .container {
+    padding: 0 15px; }
+  #footer .title {
+    font-size: 17px; }
+
+.mainVideoWrap {
+  height: 250px;
+  overflow: hidden; }
+  .mainVideoWrap .mainVideo {
+    width: 100%;
+    opacity: 0.5; }
+
+.shoppingWithBestizContainer {
+  background-color: #F5F5F5; }
+
+.sellContainer {
+  background-color: #3E3C3C; }
+
+.comingEvents {
+  text-align: center; }
+  .comingEvents .mainTitle {
+    font-size: 1.25rem; }
+  .comingEvents .subTitle {
+    font-size: 1rem; }
+
+.dashboardContainer {
+  margin-top: 20px; }
+
+html,
+body {
+  height: 100%;
+  /* The html and body elements cannot have any
+padding or margin. */ }
+
+/* Wrapper for page content to push down
+footer */
+#wrap {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  /* Negative indent footer by its height */
+  margin: 0 auto -300px;
+  /* Pad bottom by footer height */
+  padding: 0 0 300px; }
+
+.noMargin {
+  margin: 0 !important; }
+
+.clotikaContainer, .dashboardContainer {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.padAll {
+  padding: 0.9375rem; }
+
+.padTop {
+  padding-top: 0.9375rem; }
+
+.padRight {
+  padding-right: 0.9375rem; }
+
+.padLeft {
+  padding-left: 0.9375rem; }
+
+.padBottom {
+  padding-bottom: 0.9375rem; }
+
+.marginAll {
+  margin: 0.9375rem; }
+
+.marginTop {
+  margin-top: 0.9375rem; }
+
+.marginRight {
+  margin-right: 0.9375rem; }
+
+.marginLeft {
+  margin-left: 0.9375rem; }
+
+.marginBottom {
+  margin-bottom: 0.9375rem; }
+
+.marginAllX2 {
+  margin: 1.875rem; }
+
+.marginTopX2 {
+  margin-top: 1.875rem; }
+
+.marginRightX2 {
+  margin-right: 1.875rem; }
+
+.marginLeft {
+  margin-left: 1.875rem; }
+
+.marginBottomX2 {
+  margin-bottom: 1.875rem; }
+
+/*# sourceMappingURL=main.css.map */

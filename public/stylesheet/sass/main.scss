@@ -1,0 +1,89 @@
+// =============== sizes
+$footerHeight: 300px;
+
+// =============== imports
+@import "colors";
+@import "footer";
+
+$em-base: 16px; // This is the default html and body font-size for the base em value.
+@function remCalc($pxWidth) {
+    @return $pxWidth / $em-base * 1rem;
+}
+$generalPadding: remCalc(15px);
+
+@import 'dashboard';
+
+html,
+body {
+    height: 100%;
+    /* The html and body elements cannot have any
+  padding or margin. */
+}
+
+/* Wrapper for page content to push down
+footer */
+#wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by its height */
+    margin: 0 auto -#{$footerHeight};
+    /* Pad bottom by footer height */
+    padding: 0 0 #{$footerHeight};
+}
+
+.noMargin{
+    margin: 0 !important;
+}
+
+
+.clotikaContainer{
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.padAll{
+    padding: $generalPadding;
+}
+.padTop{
+    padding-top: $generalPadding;
+}
+.padRight{
+    padding-right: $generalPadding;
+}
+.padLeft{
+    padding-left: $generalPadding;
+}
+.padBottom{
+    padding-bottom: $generalPadding;
+}
+.marginAll{
+    margin: $generalPadding;
+}
+.marginTop{
+    margin-top: $generalPadding;
+}
+.marginRight{
+    margin-right: $generalPadding;
+}
+.marginLeft{
+    margin-left: $generalPadding;
+}
+.marginBottom{
+    margin-bottom: $generalPadding;
+}
+.marginAllX2{
+    margin: $generalPadding*2;
+}
+.marginTopX2{
+    margin-top: $generalPadding*2;
+}
+.marginRightX2{
+    margin-right: $generalPadding*2;
+}
+.marginLeft{
+    margin-left: $generalPadding*2;
+}
+.marginBottomX2{
+    margin-bottom: $generalPadding*2;
+}
