@@ -1,9 +1,5 @@
-// =============== sizes
-$footerHeight: 300px;
-
 // =============== imports
 @import "colors";
-@import "footer";
 
 $em-base: 16px; // This is the default html and body font-size for the base em value.
 @function remCalc($pxWidth) {
@@ -13,34 +9,14 @@ $generalPadding: remCalc(15px);
 
 @import 'dashboard';
 
-html,
 body {
-    height: 100%;
-    /* The html and body elements cannot have any
-  padding or margin. */
+    padding-top: 70px;
+    /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
 }
 
-/* Wrapper for page content to push down
-footer */
-#wrap {
-    min-height: 100%;
-    height: auto !important;
-    height: 100%;
-    /* Negative indent footer by its height */
-    margin: 0 auto -#{$footerHeight};
-    /* Pad bottom by footer height */
-    padding: 0 0 #{$footerHeight};
-}
-
+// =============== paddings and margins
 .noMargin{
     margin: 0 !important;
-}
-
-
-.clotikaContainer{
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
 }
 .padAll{
     padding: $generalPadding;
