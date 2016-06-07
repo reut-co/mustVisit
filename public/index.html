@@ -16,7 +16,7 @@
 
         <!-- Navigation -->
         <nav class="navbar navbar-inverse navbar-fixed-top noMargin" role="navigation">
-            <div class="container">
+            <div class="container" ng-controller="MainCtrl as vm">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -40,6 +40,10 @@
                             <a ui-sref="viewItems({itemType:'accessories'})">Accessories</a>
                         </li>
                     </ul>
+
+                    <div class="form-group move-down">
+                        <input type="text" id="Autocomplete" class="form-control" ng-model="vm.location" ng-autocomplete="vm.location" details="vm.locationDetails" options="vm.locationOptions" />
+                    </div>
                 </div>
                 <!-- /.navbar-collapse -->
             </div>
@@ -58,6 +62,8 @@
 
         <!--todo foundation equalizer-->
         <script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
+        <script src="externalJs/ngAutocomplete.js" type="text/javascript"></script>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places&sensor=false"></script>
 
         <script src="build/main.js"></script>
 

@@ -4,7 +4,7 @@
 (function () {
     'use strict';
 
-    var Clotika = angular.module('Clotika', ['ui.router']);
+    var Clotika = angular.module('Clotika', ['ui.router', 'ngAutocomplete']);
 
     var baseDir = "/pages/";
     var homeDir = baseDir + "dashboard/";
@@ -22,7 +22,14 @@
         ;
 
         $locationProvider.html5Mode(true);
-    })
+    });
+
+    Clotika.controller('MainCtrl', ['$stateParams', function ($stateParams) {
+        var vm = this;
+        vm.locationOptions = null;
+        vm.locationDetails = '';
+        vm.location = "";
+    }]);
 })();
 ;/**
  * Created by shlomit.c on 21/05/2016.
