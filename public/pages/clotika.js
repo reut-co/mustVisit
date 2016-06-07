@@ -4,7 +4,7 @@
 (function () {
     'use strict';
 
-    var Clotika = angular.module('Clotika', ['ui.router', 'ngAutocomplete']);
+    var Clotika = angular.module('Clotika', ['ui.router', 'ngAutocomplete','infinite-scroll']);
 
     var baseDir = "/pages/";
     var homeDir = baseDir + "dashboard/";

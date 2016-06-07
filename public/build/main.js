@@ -4,7 +4,7 @@
 (function () {
     'use strict';
 
-    var Clotika = angular.module('Clotika', ['ui.router', 'ngAutocomplete']);
+    var Clotika = angular.module('Clotika', ['ui.router', 'ngAutocomplete','infinite-scroll']);
 
     var baseDir = "/pages/";
     var homeDir = baseDir + "dashboard/";
@@ -42,6 +42,16 @@
     Clotika.controller('HomeCtrl', ['$stateParams', function ($stateParams) {
 
         var vm = this;
+
+        vm.dashboardImagesScrollFunc = function(){
+          console.log('scrolling');
+            vm.number+=5;
+        };
+
+        vm.number = 30;
+        vm.getNumber = function(num) {
+            return new Array(num);
+        }
 
     }]);
 }());

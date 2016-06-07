@@ -1,5 +1,18 @@
 <div ng-controller="HomeCtrl as vm">
-    <div class="row">
-
+    <div class="centeredWrapper">
+        <div class="row">
+            <div infinite-scroll="vm.dashboardImagesScrollFunc()" infinite-scroll-distance="1">
+                <div class="imageWrap" ng-repeat="i in vm.getNumber(vm.number) track by $index">
+                    <div class="column small-4">
+                        <div class="imageWrap">
+                            <img src="http://g02.a.alicdn.com/kf/HTB1Qa.IJVXXXXbnXVXXq6xXFXXXt/Summer-Style-Women-Print-Dress-Loose-Casual-Cami-Dresses-Chiffon-Resort-Wear-cheap-clothes-china-Blogger.jpg">
+                            <!--<img ng-if="$even" src="http://g02.a.alicdn.com/kf/HTB1Qa.IJVXXXXbnXVXXq6xXFXXXt/Summer-Style-Women-Print-Dress-Loose-Casual-Cami-Dresses-Chiffon-Resort-Wear-cheap-clothes-china-Blogger.jpg">-->
+                            <!--<img ng-if="$odd" src="http://66.media.tumblr.com/1a388e22cb19c6f10a2194d8813077d6/tumblr_nsmc2cL4u51tja3guo1_400.jpg">-->
+                        </div>
+                    </div>
+                </div>
+                <div style='clear: both;'></div>
+            </div>
+        </div>
     </div>
 </div>

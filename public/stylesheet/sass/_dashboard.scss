@@ -1,0 +1,22 @@
+@media (max-width: 999px) and (min-width: 0){
+    .centeredWrapper{
+        width: 100%;
+    }
+}
+@media (max-width: 1249px) and (min-width: 1000px){
+    .centeredWrapper {
+        width: 1000px;
+    }
+}
+@media (max-width: 1499px) and (min-width: 1250px){
+    .centeredWrapper {
+        width: 1250px;
+    }
+}
+.centeredWrapper{
+    margin: 0 auto;
+    min-height: 2000px;
+}
+.imageWrap{
+    margin-bottom: 5px;
+}

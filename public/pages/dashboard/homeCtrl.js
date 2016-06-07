@@ -10,5 +10,15 @@
 
         var vm = this;
 
+        vm.dashboardImagesScrollFunc = function(){
+          console.log('scrolling');
+            vm.number+=5;
+        };
+
+        vm.number = 30;
+        vm.getNumber = function(num) {
+            return new Array(num);
+        }
+
     }]);
 }());
